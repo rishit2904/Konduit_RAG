@@ -1,0 +1,18 @@
+----> CRAWL
+
+curl -X POST http://localhost:8000/crawl \
+  -H "Content-Type: application/json" \
+  -d '{"start_url":"https://www.nationalgeographic.com/","max_pages":50,"max_depth":2}'
+
+----> INDEX
+
+curl -s -X POST http://localhost:8000/index \
+  -H "Content-Type: application/json" \
+  -d '{"chunk_size":800,"chunk_overlap":100,"embedding_model":"sentence-transformers/all-MiniLM-L6-v2"}'
+
+-----> ASK
+
+curl -s -X POST http://localhost:8000/ask \
+  -H "Content-Type: application/json" \
+  -d '{"question":"What is climate change?","top_k":5}'
+
