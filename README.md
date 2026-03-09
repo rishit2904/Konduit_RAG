@@ -1,7 +1,6 @@
 # RAG System - Question Answering from Crawled Content
 
-**Author:** Rishit Girdhar  
-**Reg. No.:** 220962050
+
 
 ---
 
@@ -256,7 +255,5 @@ This project uses open-source libraries and is built for academic purposes. The 
 
 ## Contact
 
-**Rishit Girdhar**  
-Reg. No.: 220962050
 
 Feel free to reach out if you have questions or find any bugs!
